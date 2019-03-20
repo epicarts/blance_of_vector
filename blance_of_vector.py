@@ -9,10 +9,10 @@ def trans_fun(theta, F1):
     return np.dot(trans, F1.reshape(2,1)).reshape(2)
 
 a = 9.81 # 중력임
-m1 = 0.02# 추1 무게.
-m2 = 0.02# 추2 무게.
-m3 = 0.04# 추3 무게.
-degree = [90, 142, 296]
+m1 = 0.04# 추1 무게.
+m2 = 0.04# 추2 무게.
+m3 = 0.02# 추3 무게.
+degree = [265.5, 14.5, 121]
 
 bais = np.array([1.0,0.0]) # 기저 벡터 (1,0)
 
@@ -55,4 +55,4 @@ ax.set_xlim([-0.45, 0.45])
 ax.set_ylim([-0.45, 0.45])
 plt.draw()
 plt.show()
-fig.savefig('2.png')
+fig.savefig('3.png')
